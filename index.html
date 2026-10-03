@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graduate Research Profile Questionnaire — SCIEED261</title>
+<meta name="description" content="Research profile questionnaire for graduate students in SCIEED261 Advanced Environmental Science, leading to a scientometric research paper.">
+<style>
+  :root{
+    --ink:#1d2a24; --muted:#56655d; --line:#d7e0da; --bg:#f4f7f5; --card:#ffffff;
+    --accent:#1f6f4a; --accent-soft:#e3f1e9; --warn:#8a4b0f; --warn-soft:#fdf3e6; --err:#b42318;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  header{background:var(--accent);color:#fff;padding:32px 16px 28px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 16px}
+  header .course{font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin:0 0 6px}
+  header h1{margin:0 0 8px;font-size:clamp(1.4rem,3.5vw,2rem);line-height:1.2}
+  header p{margin:0;opacity:.95}
+  main{padding:24px 0 48px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 22px 10px;margin-bottom:18px}
+  section h2{margin:0 0 4px;font-size:1.15rem;color:var(--accent)}
+  section .lead{margin:0 0 16px;color:var(--muted);font-size:.93rem}
+  .q{margin-bottom:18px}
+  .q > label,.q > .qlabel{display:block;font-weight:600;margin-bottom:6px}
+  .hint{display:block;font-weight:400;color:var(--muted);font-size:.85rem;margin-top:2px}
+  .req::after{content:" *";color:var(--err)}
+  input[type=text],input[type=email],input[type=number],input[type=url],select,textarea{
+    width:100%;padding:9px 11px;border:1px solid #b9c7be;border-radius:7px;font:inherit;background:#fff;color:var(--ink)}
+  textarea{min-height:90px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px 14px}
+  .opts label,.inline label{display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:.95rem}
+  .opts input,.inline input{margin-top:4px;flex:none}
+  .inline{display:flex;flex-wrap:wrap;gap:6px 18px}
+  fieldset{border:none;padding:0;margin:0}
+  .group{margin:14px 0 6px;padding:12px 14px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0}
+  .group h3{margin:0 0 8px;font-size:.98rem}
+  table.scale{width:100%;border-collapse:collapse;font-size:.92rem}
+  table.scale th,table.scale td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:center}
+  table.scale th:first-child,table.scale td:first-child{text-align:left;width:42%}
+  table.scale thead th{font-weight:600;color:var(--muted);font-size:.8rem}
+  .scroll{overflow-x:auto}
+  .privacy{background:var(--warn-soft);border:1px solid #f0d3ac}
+  .privacy h2{color:var(--warn)}
+  .privacy ol{padding-left:20px;margin:0 0 12px}
+  .privacy li{margin-bottom:8px;font-size:.93rem}
+  .consent{background:#fff;border:1px solid #f0d3ac;border-radius:8px;padding:12px 14px;margin:12px 0}
+  .consent label{display:flex;gap:10px;align-items:flex-start;font-weight:600}
+  .consent input{margin-top:5px;flex:none;width:18px;height:18px}
+  button{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:12px 26px;font:inherit;font-weight:600;cursor:pointer}
+  button:hover{filter:brightness(1.08)}
+  button[disabled]{opacity:.6;cursor:wait}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  #status{font-weight:600}
+  #status.ok{color:var(--accent)} #status.bad{color:var(--err)}
+  .thanks{display:none;text-align:center;padding:40px 22px}
+  .thanks h2{color:var(--accent)}
+  .hp{position:absolute;left:-5000px}
+  footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 16px 32px}
+  @media (max-width:640px){
+    .grid2{grid-template-columns:1fr}
+    section{padding:18px 14px 6px}
+  }
+  @media print{header{background:none;color:#000}button,.actions{display:none}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="course">SCIEED261 · Advanced Environmental Science</p>
+    <h1>Graduate Student Research Profile Questionnaire</h1>
+    <p>Toward a Scientometric Research Paper in Your Chosen Field<br>
+    Course Facilitator: <strong>Dr. Ryan Manuel D. Guido</strong></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ======================================================
+     FORMSPREE: replace YOUR_FORM_ID with the ID from your
+     Formspree dashboard (e.g., https://formspree.io/f/xyzabcd)
+     ====================================================== -->
+<form id="profileForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+  <input type="hidden" name="_subject" value="SCIEED261 – Research Profile Questionnaire Submission">
+  <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+  <section>
+    <h2>Purpose of this Questionnaire</h2>
+    <p class="lead" style="margin-bottom:10px">This questionnaire is a course requirement in <strong>SCIEED261 – Advanced Environmental Science</strong> under Dr. Ryan Manuel D. Guido. It builds your research profile — your background, skills, interests, and goals — so that you can select a field within (or allied to) environmental science and develop a <strong>scientometric (bibliometric) research paper</strong> on it.</p>
+    <p class="lead">It takes about 20–25 minutes to complete. Items marked <span style="color:var(--err)">*</span> are required. Please answer honestly; there are no right or wrong answers, and your responses will not affect your grade except as evidence of completion.</p>
+  </section>
+
+  <!-- ================= DATA PRIVACY ================= -->
+  <section class="privacy">
+    <h2>Data Privacy Notice and Consent</h2>
+    <p class="lead">In compliance with the <strong>Data Privacy Act of 2012 (Republic Act No. 10173)</strong>, its Implementing Rules and Regulations, and issuances of the National Privacy Commission (NPC), please read the following before proceeding.</p>
+    <ol>
+      <li><strong>Personal Information Controller.</strong> The data collected through this form are controlled by the course facilitator, Dr. Ryan Manuel D. Guido, for SCIEED261 – Advanced Environmental Science.</li>
+      <li><strong>Data collected.</strong> Your name, student number, email address, academic program, educational and professional background, research experience, skills, and research interests. No sensitive personal information (e.g., health, religion, political affiliation, government-issued ID numbers) is requested.</li>
+      <li><strong>Purpose.</strong> The data will be used solely to (a) build your graduate research profile, (b) advise you on selecting a field and topic for a scientometric paper, (c) plan course instruction and consultations, and (d) produce aggregated, de-identified summaries for academic and course-improvement purposes.</li>
+      <li><strong>Voluntary participation.</strong> Answering this questionnaire is voluntary. You may skip non-required items and may withdraw your consent at any time by contacting the course facilitator, without penalty.</li>
+      <li><strong>Storage and security.</strong> Responses are transmitted securely (HTTPS) and stored through the Formspree form service and the facilitator's password-protected accounts. Access is limited to the course facilitator. Reasonable organizational, physical, and technical safeguards are applied.</li>
+      <li><strong>Sharing and disclosure.</strong> Your personal data will not be sold or shared with third parties. Any report, presentation, or publication derived from this questionnaire will present data only in aggregated or anonymized form, so that no individual respondent can be identified.</li>
+      <li><strong>Retention.</strong> Data will be kept only for the duration of the course and for one (1) academic year thereafter for advising and documentation, after which they will be securely deleted, unless you consent to longer retention.</li>
+      <li><strong>Your rights.</strong> As a data subject, you have the right to be informed, to access, to object, to erasure or blocking, to rectification, to data portability, to damages, and to file a complaint with the National Privacy Commission (privacy.gov.ph).</li>
+      <li><strong>Contact.</strong> For questions, corrections, or withdrawal of consent, contact the course facilitator through the official course channel or your institution's Data Protection Officer.</li>
+    </ol>
+    <div class="consent">
+      <label><input type="checkbox" name="privacy_consent" value="I have read and understood the Data Privacy Notice and I voluntarily consent to the collection and processing of my personal data for the purposes stated above." required>
+      <span class="req">I have read and understood the Data Privacy Notice, and I voluntarily give my consent to the collection, use, and processing of my personal data for the purposes stated above.</span></label>
+    </div>
+    <div class="consent">
+      <label><input type="checkbox" name="consent_anonymized_use" value="Yes">
+      <span>(Optional) I also agree that my anonymized responses may be included in aggregated academic research on graduate research profiles.</span></label>
+    </div>
+  </section>
+
+  <!-- ================= PART I ================= -->
+  <section>
+    <h2>Part I. Respondent Profile</h2>
+    <p class="lead">Basic information to identify your submission.</p>
+    <div class="grid2">
+      <div class="q"><label for="full_name" class="req">Full name (Last, First, M.I.)</label><input type="text" id="full_name" name="full_name" required></div>
+      <div class="q"><label for="student_number" class="req">Student number</label><input type="text" id="student_number" name="student_number" required></div>
+      <div class="q"><label for="email" class="req">Email address</label><input type="email" id="email" name="email" required></div>
+      <div class="q"><label for="orcid">ORCID iD <span class="hint">If available (e.g., 0000-0002-1825-0097)</span></label><input type="text" id="orcid" name="orcid" placeholder="0000-0000-0000-0000"></div>
+      <div class="q"><label for="program" class="req">Graduate program</label>
+        <select id="program" name="program" required>
+          <option value="">— Select —</option>
+          <option>Master of Science (MS)</option>
+          <option>Master of Arts in Education / Science Education (MAEd / MASE)</option>
+          <option>Master of Science in Teaching (MST)</option>
+          <option>Doctor of Philosophy (PhD)</option>
+          <option>Doctor of Education (EdD)</option>
+          <option>Other</option>
+        </select></div>
+      <div class="q"><label for="specialization">Major / specialization</label><input type="text" id="specialization" name="specialization" placeholder="e.g., Environmental Science, Physical Science, Biology"></div>
+      <div class="q"><label for="year_level">Year / units completed in program</label>
+        <select id="year_level" name="year_level">
+          <option value="">— Select —</option>
+          <option>First year / below 12 units</option>
+          <option>12–24 units</option>
+          <option>Completed academic units</option>
+          <option>Thesis / dissertation writing stage</option>
+        </select></div>
+      <div class="q"><label for="undergrad">Undergraduate degree</label><input type="text" id="undergrad" name="undergrad_degree" placeholder="e.g., BS Biology, BSEd Science"></div>
+    </div>
+    <div class="q"><span class="qlabel">Current employment / professional role</span>
+      <div class="opts">
+        <label><input type="radio" name="employment" value="Basic education teacher (public)"> Basic education teacher (public)</label>
+        <label><input type="radio" name="employment" value="Basic education teacher (private)"> Basic education teacher (private)</label>
+        <label><input type="radio" name="employment" value="Higher education faculty"> Higher education faculty</label>
+        <label><input type="radio" name="employment" value="Government agency (e.g., DENR, DOST, LGU)"> Government agency (e.g., DENR, DOST, LGU)</label>
+        <label><input type="radio" name="employment" value="Private industry / consultancy"> Private industry / consultancy</label>
+        <label><input type="radio" name="employment" value="NGO / civil society"> NGO / civil society</label>
+        <label><input type="radio" name="employment" value="Full-time student"> Full-time student</label>
+        <label><input type="radio" name="employment" value="Other"> Other</label>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="q"><label for="workplace">Institution / workplace <span class="hint">Optional</span></label><input type="text" id="workplace" name="workplace"></div>
+      <div class="q"><label for="years_exp">Years of professional experience</label><input type="number" id="years_exp" name="years_experience" min="0" max="60"></div>
+    </div>
+  </section>
+
+  <!-- ================= PART II ================= -->
+  <section>
+    <h2>Part II. Research Experience and Outputs</h2>
+    <p class="lead">Your track record helps calibrate the scope of your scientometric paper.</p>
+    <div class="q"><span class="qlabel">Which research outputs have you completed? <span class="hint">Check all that apply.</span></span>
+      <div class="opts">
+        <label><input type="checkbox" name="research_outputs" value="Undergraduate thesis"> Undergraduate thesis</label>
+        <label><input type="checkbox" name="research_outputs" value="Action research (DepEd)"> Action research (DepEd)</label>
+        <label><input type="checkbox" name="research_outputs" value="Institutional / funded research"> Institutional / funded research</label>
+        <label><input type="checkbox" name="research_outputs" value="Conference paper presentation"> Conference paper presentation</label>
+        <label><input type="checkbox" name="research_outputs" value="Journal article (local / non-indexed)"> Journal article (local / non-indexed)</label>
+        <label><input type="checkbox" name="research_outputs" value="Journal article (Scopus / WoS-indexed)"> Journal article (Scopus / WoS-indexed)</label>
+        <label><input type="checkbox" name="research_outputs" value="Literature review / systematic review"> Literature review / systematic review</label>
+        <label><input type="checkbox" name="research_outputs" value="Bibliometric / scientometric study"> Bibliometric / scientometric study</label>
+        <label><input type="checkbox" name="research_outputs" value="None yet"> None yet</label>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="q"><label for="n_pubs">Number of published papers (any venue)</label><input type="number" id="n_pubs" name="number_of_publications" min="0"></div>
+      <div class="q"><label for="thesis_status">Status of graduate thesis / dissertation</label>
+        <select id="thesis_status" name="thesis_status">
+          <option value="">— Select —</option>
+          <option>No topic yet</option>
+          <option>Topic identified, no proposal</option>
+          <option>Proposal in progress</option>
+          <option>Proposal defended</option>
+          <option>Data gathering / analysis</option>
+          <option>Final writing / defended</option>
+        </select></div>
+    </div>
+    <div class="q"><label for="thesis_topic">Working title or topic of your thesis / dissertation <span class="hint">If any — your scientometric paper may complement it.</span></label><textarea id="thesis_topic" name="thesis_topic"></textarea></div>
+    <div class="q"><label for="profiles">Links to research profiles <span class="hint">Google Scholar, Scopus Author ID, ResearchGate, etc. (optional)</span></label><input type="text" id="profiles" name="research_profile_links"></div>
+  </section>
+
+  <!-- ================= PART III ================= -->
+  <section>
+    <h2>Part III. Research Skills Self-Assessment</h2>
+    <p class="lead">Rate your current proficiency. 1 = No experience · 2 = Beginner · 3 = Intermediate · 4 = Advanced · 5 = Expert.</p>
+    <div class="scroll">
+      <table class="scale">
+        <thead><tr><th>Skill</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead>
+        <tbody id="skillsBody"></tbody>
+      </table>
+    </div>
+    <div class="q" style="margin-top:16px"><span class="qlabel">Software and tools you have used <span class="hint">Check all that apply.</span></span>
+      <div class="opts">
+        <label><input type="checkbox" name="tools_used" value="MS Excel / Google Sheets"> MS Excel / Google Sheets</label>
+        <label><input type="checkbox" name="tools_used" value="SPSS / jamovi / JASP"> SPSS / jamovi / JASP</label>
+        <label><input type="checkbox" name="tools_used" value="R / RStudio"> R / RStudio</label>
+        <label><input type="checkbox" name="tools_used" value="Python"> Python</label>
+        <label><input type="checkbox" name="tools_used" value="VOSviewer"> VOSviewer</label>
+        <label><input type="checkbox" name="tools_used" value="Bibliometrix / Biblioshiny"> Bibliometrix / Biblioshiny</label>
+        <label><input type="checkbox" name="tools_used" value="CiteSpace"> CiteSpace</label>
+        <label><input type="checkbox" name="tools_used" value="Publish or Perish"> Publish or Perish</label>
+        <label><input type="checkbox" name="tools_used" value="Zotero / Mendeley / EndNote"> Zotero / Mendeley / EndNote</label>
+        <label><input type="checkbox" name="tools_used" value="QGIS / ArcGIS"> QGIS / ArcGIS</label>
+        <label><input type="checkbox" name="tools_used" value="NVivo / ATLAS.ti"> NVivo / ATLAS.ti</label>
+        <label><input type="checkbox" name="tools_used" value="Gephi"> Gephi</label>
+      </div>
+    </div>
+    <div class="q"><span class="qlabel">Bibliographic databases you can access <span class="hint">Check all that apply.</span></span>
+      <div class="opts">
+        <label><input type="checkbox" name="database_access" value="Scopus"> Scopus</label>
+        <label><input type="checkbox" name="database_access" value="Web of Science"> Web of Science</label>
+        <label><input type="checkbox" name="database_access" value="Dimensions"> Dimensions</label>
+        <label><input type="checkbox" name="database_access" value="OpenAlex"> OpenAlex</label>
+        <label><input type="checkbox" name="database_access" value="Google Scholar"> Google Scholar</label>
+        <label><input type="checkbox" name="database_access" value="PubMed"> PubMed</label>
+        <label><input type="checkbox" name="database_access" value="ERIC"> ERIC</label>
+        <label><input type="checkbox" name="database_access" value="Lens.org"> Lens.org</label>
+        <label><input type="checkbox" name="database_access" value="Not sure / none"> Not sure / none</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PART IV ================= -->
+  <section>
+    <h2>Part IV. Fields of Interest</h2>
+    <p class="lead">Check <strong>all</strong> fields that interest you. These will guide the selection of the field for your scientometric paper.</p>
+    <fieldset>
+      <div id="fieldGroups"></div>
+      <div class="q" style="margin-top:12px"><label for="other_field">Other field(s) not listed</label><input type="text" id="other_field" name="other_fields_of_interest"></div>
+    </fieldset>
+  </section>
+
+  <!-- ================= DECLARATION ================= -->
+  <section>
+    <h2>Declaration</h2>
+    <div class="consent" style="border-color:var(--line)">
+      <label><input type="checkbox" name="declaration" value="I certify that the information provided is true and accurate to the best of my knowledge." required>
+      <span class="req">I certify that the information I provided is true and accurate to the best of my knowledge.</span></label>
+    </div>
+    <div class="actions" style="margin:14px 0 12px">
+      <button type="submit" id="submitBtn">Submit Questionnaire</button>
+      <span id="status" role="status" aria-live="polite"></span>
+    </div>
+  </section>
+</form>
+
+<section class="thanks" id="thanks">
+  <h2>Thank you!</h2>
+  <p>Your research profile has been submitted for <strong>SCIEED261 – Advanced Environmental Science</strong>.<br>
+  Dr. Ryan Manuel D. Guido will review your responses and discuss your scientometric paper direction during consultation.</p>
+</section>
+
+</main>
+
+<footer>SCIEED261 · Advanced Environmental Science · Dr. Ryan Manuel D. Guido<br>
+Personal data are processed in accordance with the Data Privacy Act of 2012 (RA 10173).</footer>
+
+<script>
+/* ---------- Fields of interest (grouped) ---------- */
+const FIELDS = {
+  "Atmospheric and Climate Sciences": [
+    "Climate change science and modeling","Climate change adaptation and resilience","Climate change mitigation and carbon management",
+    "Air quality and atmospheric pollution","Meteorology and extreme weather / tropical cyclones","Urban heat island and urban climate",
+    "Light pollution / artificial light at night (ALAN)","Paleoclimatology"
+  ],
+  "Water and Marine Sciences": [
+    "Water quality and freshwater ecology","Hydrology and water resources management","Oceanography and marine science",
+    "Coral reef ecology","Mangrove and blue carbon ecosystems","Coastal zone management and sea-level rise",
+    "Microplastics and marine litter","Fisheries and aquatic resource management","Wastewater treatment and reuse"
+  ],
+  "Earth and Soil Sciences": [
+    "Geology and geohazards (earthquakes, volcanoes, landslides)","Soil science and soil health","Land use / land cover change",
+    "Mining and environmental impacts","Groundwater and hydrogeology"
+  ],
+  "Ecology and Biodiversity": [
+    "Biodiversity conservation","Forest ecology and reforestation","Wildlife ecology and protected areas",
+    "Invasive species","Ecosystem services and valuation","Restoration ecology","Urban ecology and green spaces"
+  ],
+  "Environmental Chemistry, Health and Toxicology": [
+    "Environmental chemistry","Ecotoxicology","Heavy metals contamination","Emerging contaminants (PFAS, pharmaceuticals)",
+    "Environmental health and epidemiology","Pesticides and agrochemicals"
+  ],
+  "Energy, Resources and Sustainability": [
+    "Renewable energy (solar, wind, hydro, geothermal)","Energy efficiency and transition","Circular economy",
+    "Solid waste management and recycling","Life cycle assessment (LCA)","Sustainable agriculture and food systems",
+    "Green chemistry and sustainable materials","Sustainable cities and transport"
+  ],
+  "Environmental Technology and Data Science": [
+    "Remote sensing and GIS","Environmental monitoring and sensors / IoT","Environmental data science and machine learning",
+    "Environmental modeling and simulation","Citizen science","Nature-based solutions"
+  ],
+  "Disaster, Policy and Social Dimensions": [
+    "Disaster risk reduction and management (DRRM)","Environmental policy, law and governance","Environmental economics",
+    "Environmental justice and equity","Indigenous and local ecological knowledge","Environmental psychology and pro-environmental behavior",
+    "Corporate sustainability and ESG"
+  ],
+  "Education and Communication": [
+    "Environmental education","Education for sustainable development (ESD)","Climate change education",
+    "Science education (STEM) with environmental context","Science and environmental communication"
+  ],
+  "Allied Physical and Space Sciences": [
+    "Astronomy and dark-sky conservation","Space weather and environmental impacts","Environmental physics","Planetary science and Earth system science"
+  ]
+};
+
+const groupsEl = document.getElementById("fieldGroups");
+for (const [group, items] of Object.entries(FIELDS)) {
+  const div = document.createElement("div"); div.className = "group";
+  div.innerHTML = `<h3>${group}</h3><div class="opts"></div>`;
+  const opts = div.querySelector(".opts");
+  items.forEach(f => {
+    const l = document.createElement("label");
+    const i = document.createElement("input");
+    i.type = "checkbox"; i.name = "fields_of_interest"; i.value = f;
+    l.append(i, " " + f); opts.appendChild(l);
+  });
+  groupsEl.appendChild(div);
+}
+
+/* ---------- Skills scale ---------- */
+const SKILLS = [
+  "Formulating research questions","Literature searching in databases","Designing Boolean search strings",
+  "Reviewing / synthesizing literature","Descriptive and inferential statistics","Data cleaning and management",
+  "Bibliometric / scientometric analysis","Network visualization (e.g., VOSviewer)","Academic writing in English",
+  "Citing and referencing (APA / reference managers)"
+];
+const tbody = document.getElementById("skillsBody");
+SKILLS.forEach((s, idx) => {
+  const key = "skill_" + s.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
+  const tr = document.createElement("tr");
+  let cells = `<td>${idx + 1}. ${s}</td>`;
+  for (let v = 1; v <= 5; v++) cells += `<td><input type="radio" name="${key}" value="${v}" aria-label="${s}: ${v}"></td>`;
+  tr.innerHTML = cells; tbody.appendChild(tr);
+});
+
+/* ---------- Submission via Formspree (AJAX, with normal-POST fallback) ---------- */
+const form = document.getElementById("profileForm");
+const statusEl = document.getElementById("status");
+const btn = document.getElementById("submitBtn");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  if (form.action.includes("YOUR_FORM_ID")) {
+    statusEl.className = "bad";
+    statusEl.textContent = "Form not yet connected: replace YOUR_FORM_ID with your Formspree form ID.";
+    return;
+  }
+  btn.disabled = true; statusEl.className = ""; statusEl.textContent = "Submitting…";
+
+  // Join multi-select checkboxes into single readable fields
+  const fd = new FormData(form);
+  const out = new FormData();
+  for (const key of new Set(fd.keys())) out.append(key, fd.getAll(key).join("; "));
+  out.append("submitted_at", new Date().toLocaleString("en-PH", { timeZone: "Asia/Manila" }));
+
+  try {
+    const res = await fetch(form.action, { method: "POST", body: out, headers: { Accept: "application/json" } });
+    if (res.ok) {
+      form.style.display = "none";
+      document.getElementById("thanks").style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const data = await res.json().catch(() => ({}));
+      statusEl.className = "bad";
+      statusEl.textContent = (data.errors && data.errors.map(x => x.message).join(", ")) || "Submission failed. Please try again.";
+      btn.disabled = false;
+    }
+  } catch (err) {
+    statusEl.className = "bad";
+    statusEl.textContent = "Network error. Please check your connection and try again.";
+    btn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
